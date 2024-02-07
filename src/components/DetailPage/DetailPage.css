@@ -1,0 +1,209 @@
+.principal-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3f3f3f; /* Color de fondo deseado */
+    background-attachment: fixed;
+    overflow: hidden;
+    min-height: 100vh;
+    background-image: url('../FormPage/img/lowOpacity.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transform: scale(1.1);
+    margin: -10px; 
+  }
+  
+  .comeback-button {
+    position: absolute;
+    width: 5vh;
+    height: 5vh;
+    background: linear-gradient(to right, #fbc53182, #f75f137a, #c7003877, #6b057277, #390ca382);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .comeback-button:hover {
+    cursor: pointer;
+    
+  }
+  
+.detail-allitems-container {
+    border: 1px solid black;
+    margin: 15% auto;
+    width: 80%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    background-image: url('./img/fondo-item.jpg');
+    background-size: cover;
+    background-position: center; 
+    border-radius: 180px;
+    position: relative; /* Agrega esta propiedad */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-20%); /* Ajusta la posición vertical */
+  }
+
+.detail-item-container {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+    transform: scale(1.5);
+    margin-right: 10vh;
+    
+  }
+  
+  .detail-image-item-container {
+    text-align: center;
+    margin-right: 80px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0,0.9 );
+  }
+  
+  .detail-image-item-container img {
+    width: 150px;
+  }
+  
+  .detail-name {
+    margin-top: 10px;
+    font-weight: bold;
+    background: linear-gradient(to right, #fbc531, #f75e13, #c70039, #6a0572, #3a0ca3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+  }
+  
+  .detail-stats {
+    text-align: center;
+    text-align: justify;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #fbc531, #f75e13, #c70039, #6a0572, #3a0ca3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;   
+  }
+
+  .detail-stats button {
+    background: none;
+    border-radius: 10px;
+  }
+
+  .detail-stats button:hover {
+   cursor: pointer;
+  }
+
+  .stat-item {
+    margin-bottom: 15px; /* Ajusta el valor según el espacio deseado */
+  }
+  
+  
+  .detail-stats div {
+    margin: 10px;
+  }
+
+
+/*MODAL*/
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+  
+  .modal-title {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-form {
+    background-color: rgba(95, 95, 98, 0.662);
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 80vh; /* Ajusta la altura máxima del formulario según tus necesidades */
+    width: 90%;
+    max-width: 400px; /* Ajusta el ancho máximo del formulario según tus necesidades */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 20px auto; /* Separación del formulario respecto al contenedor */
+    margin-bottom: 20%;
+    padding-bottom: 20px;
+    overflow: auto;
+  }
+  .modal-form::-webkit-scrollbar {
+    width: 6px; /* Ancho de la barra de desplazamiento */
+  }
+  
+  .modal-form::-webkit-scrollbar-track {
+    background: transparent; /* Color de fondo de la barra de desplazamiento */
+  }
+  
+  .modal-form::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); /* Color del pulgar de la barra de desplazamiento */
+    border-radius: 3px; /* Borde redondeado del pulgar */
+  }
+
+    
+  .modal-label {
+    display: block;
+    font-weight: bold;
+    background: linear-gradient(to right, #fbc531, #f75e13, #c70039, #6a0572, #3a0ca3);
+    -webkit-background-clip: text; /* Aplicar degradado solo al texto */
+    -webkit-text-fill-color: transparent; /* Hacer el texto transparente para mostrar el degradado de fondo */
+    margin-top: 10px;
+  }
+  
+  .modal-input {
+    margin-top: 10px;
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: rgba(254, 254, 254, 0.787);
+    color: black;
+  }
+  
+  .modal-select {
+    width: 95%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: rgba(254, 254, 254, 0.787);
+    margin-top: 10px;
+  }
+  
+  .modal-button {
+    padding: 10px 20px;
+    background-color: #45427181;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+  }
+  
+  .modal-button:hover {
+    background: linear-gradient(to right, #fbc53182, #f75f137a, #c7003877, #6b057277, #390ca382);
+    box-shadow: none;
+  }

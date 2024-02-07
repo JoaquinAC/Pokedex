@@ -1,0 +1,65 @@
+.card {
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 290px;
+    background-image: url('../Card/img/Molde.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    position: relative;
+    background-color: rgba(86, 84, 84, 0.676);
+    max-width: 300px;
+  }
+
+  .card:hover {
+    cursor: pointer;
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la tarjeta */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Agrega un sombreado alrededor de la tarjeta */
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 200px;
+    display: block;
+  }
+  
+  .card-content {
+    margin-top: 10px;
+    position: relative;
+    bottom: 40px;
+  }
+  
+  .card-content h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: rgb(59, 59, 59);
+    margin-left: 10px;
+    text-align: center;
+    border: 1px solid rgb(230, 229, 229, 0.3); /* Agrega un borde de 1px de grosor en color negro */
+    display: inline-block;
+    background-color: rgb(230, 229, 229, 0.3);
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  
+  .card-content p {
+    margin: 0;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    text-align: center;
+   
+  } 
+
+  .card-text {
+    border-radius: 10px;
+    background-color: rgba(120, 120, 120, 0.467);
+    font-weight: bold;
+  }
+
+
+
+
+  

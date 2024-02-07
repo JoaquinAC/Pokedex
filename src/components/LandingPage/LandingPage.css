@@ -1,0 +1,59 @@
+.landing-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../FormPage/img/lowOpacity.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .title-container {
+    margin-left: 20%;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2vw; /* Ajusta el tamaño del texto con unidades vw */
+    color: #fff;
+    background: linear-gradient(to right, #fbc531, #f75e13, #c70039, #1e217d, #0b1ae5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 1s ease;
+  }
+  
+  .pokemon-button {
+    font-size: 1vw; /* Ajusta el tamaño del texto del botón con unidades vw */
+    padding: 10px 20px;
+    background-color: #454271;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    margin-top: 2vh; /* Ajusta el margen superior con unidades vh */
+    transition: background-color 1s ease;
+  }
+  
+  .pokemon-button:hover {
+    background: linear-gradient(to right, #fbc531, #f75e13, #c70039, #6a0572, #3a0ca3);
+    box-shadow: none;
+  }
+
+  .gif-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10vw; /* Ajusta el espacio a la derecha con unidades vw */
+  }
+
+  
+  .gif {
+    width: 25vw; /* Ajusta el tamaño de los gifs con unidades vw */
+    height: auto;
+  }
+  
