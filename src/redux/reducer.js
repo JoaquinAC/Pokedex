@@ -8,7 +8,8 @@ import {
     MODIFY_POKEMON_SUCCESS,
     RESET_MODIFY_POKEMON,
     GET_POKEMON_TYPES_SUCCESS,
-    RESET_SEARCH_BYNAME
+    RESET_SEARCH_BYNAME,
+    GET_POKEMON_SEARCH_SUCCESS
   } from './action-types';
 
   
@@ -21,7 +22,8 @@ import {
     pokemonByID:null,
     deletedPokemon:false,
     modifyPokemon:false,
-    pokemonTypes: []
+    pokemonTypes: [],
+    AllPokemonsSearch: []
   };
   
   const pokemonReducer = (state = initialState, action) => {
@@ -90,6 +92,11 @@ import {
           return{
             ...state,
             pokemonByName:[],  
+          };
+        case GET_POKEMON_SEARCH_SUCCESS:
+          return {
+            ...state,
+            AllPokemonsSearch: action.payload,
           }
       default:
         return state;

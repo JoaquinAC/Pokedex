@@ -9,7 +9,8 @@ import {
     MODIFY_POKEMON_SUCCESS,
     RESET_MODIFY_POKEMON,
     GET_POKEMON_TYPES_SUCCESS,
-    RESET_SEARCH_BYNAME
+    RESET_SEARCH_BYNAME,
+    GET_POKEMON_SEARCH_SUCCESS
   } from './action-types';
 //CREATE POKEMON
 export const createPokemonSuccess = (pokemon) => ({
@@ -66,7 +67,10 @@ export const createPokemonSuccess = (pokemon) => ({
     type: RESET_SEARCH_BYNAME,
   });
   
-  
+  export const getSearchPokemonSuccess = (searchPokemons) => ({
+    type: GET_POKEMON_SEARCH_SUCCESS,
+    payload: searchPokemons
+  })
   //==========================
   
   //CREATE
@@ -176,7 +180,6 @@ export const createPokemonSuccess = (pokemon) => ({
   
   
   //GET TYPES
-  
   export const getPokemonTypes = () => {
     return async (dispatch) => {
       try {
@@ -190,3 +193,18 @@ export const createPokemonSuccess = (pokemon) => ({
       }
     };
   };
+
+  //GET POKEMONS SEARCH
+
+  export const getPokemonSearch = () => {
+    return async(dispatch) => {
+      try {
+        const response = await axios.get('http://localhost:3001/pokemons/search')
+        const searchPokemons = response.data
+
+        dispatch(getSearchPokemonSuccess(searchPokemons))
+      } catch (error) {
+        console.log(error)
+      }
+    }
+  }
